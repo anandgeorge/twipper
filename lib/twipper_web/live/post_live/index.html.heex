@@ -1,0 +1,196 @@
+
+<%= if @live_action in [:new, :edit] do %>
+  <%= live_modal TwipperWeb.PostLive.FormComponent,
+    id: @post.id || :new,
+    title: @page_title,
+    action: @live_action,
+    post: @post,
+    return_to: Routes.post_index_path(@socket, :index) %>
+<% end %>
+
+<div class="min-w-screen min-h-screen md:grid md:grid-cols-2 md:gap-10 -mt2 mb-8 px-5 py-5">
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+
+    <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 mt-4 mb-4" style="max-width: 400px">
+        <div class="w-full flex mb-2 mt-2">
+            <div class="overflow-hidden rounded-full w-12 h-12">
+                <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+            </div>
+            <div class="flex-grow pl-3">
+                <h6 class="font-bold text-md">Joe Blow</h6>
+                <p class="text-xs text-gray-600">@joe.blow</p>
+                <p class="text-xs text-gray-500">Oct 15th 8:33pm</p>
+            </div>
+            <div class="w-12 text-right">
+                <i class="mdi mdi-twitter text-blue-400 text-3xl"></i>
+            </div>
+        </div>
+        <div class="w-full">
+            <p class="text-base md:text-lg">B@BTC P@65000 SL@63000 C@67000</p>
+        </div>
+        <%# <div class="w-full">
+            <p class="text-xs text-gray-500 text-right">Oct 15th 8:33pm</p>
+        </div> %>
+    </div>
+<%= live_patch to: Routes.post_index_path(@socket, :new) do %>
+          <button
+            class="inline-block px-6 py-2 text-lg leading-6 text-center text-white transition bg-blue-400	rounded-full shadow ripple hover:shadow-lg hover:bg-blue-600 focus:outline-none fixed bottom-5 right-5"
+          >
+            Twip
+          </button>
+<% end %>
+</div>
+
+
+
+
+

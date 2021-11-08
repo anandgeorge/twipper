@@ -36,3 +36,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - mix phx.server
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+## Creating the timeline
+
+- mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
+- Copy the routes created to router.ex
+- mix ecto.migrate

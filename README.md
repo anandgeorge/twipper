@@ -35,10 +35,14 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Cloning the repo
 
+- cd twipper
 - mix deps.get
 - cd assets
 - npm install
 - cd ../
+- Change postgres password in config/dev.exs
+- mix ecto.create
+- mix ecto.migrate
 - mix phx.server
 
 Now you can visit [`localhost:4000`](http://localhost:4000/posts) from your browser.

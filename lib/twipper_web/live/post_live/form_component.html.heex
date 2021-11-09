@@ -1,6 +1,5 @@
-<div>
-  <h2><%= @title %></h2>
-
+<div class="flex flex-col items-center w-full md:justify-center md:w-3/6">
+<%# <h2 class="w-40 mt-2 font-extrabold text-center text-gray-900">New Post</h2> %>
   <.form
     let={f}
     for={@changeset}
@@ -9,24 +8,9 @@
     phx-change="validate"
     phx-submit="save">
   
-    <%= label f, :username %>
-    <%= text_input f, :username %>
-    <%= error_tag f, :username %>
-  
-    <%= label f, :body %>
-    <%= text_input f, :body %>
-    <%= error_tag f, :body %>
-  
-    <%= label f, :likes_count %>
-    <%= number_input f, :likes_count %>
-    <%= error_tag f, :likes_count %>
-  
-    <%= label f, :reposts_count %>
-    <%= number_input f, :reposts_count %>
-    <%= error_tag f, :reposts_count %>
-  
-    <div>
-      <%= submit "Save", phx_disable_with: "Saving..." %>
-    </div>
+    <%= textarea f, :body, class: "w-50 px-4 py-4 md:w-80 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-2 mb-5 sm:text-sm border border-gray-300 rounded-md md:ml-20" %>
+    <span class="text-center md:ml-10"><%= error_tag f, :body %></span>
+    <%= submit "Save", phx_disable_with: "Saving...", class: "md:ml-20 px-6 py-2 text-lg leading-6 text-center text-white transition bg-blue-400 rounded-full shadow ripple hover:shadow-lg hover:bg-blue-600 focus:outline-none" %>
+    
   </.form>
 </div>

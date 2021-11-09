@@ -27,6 +27,12 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - Link to the css file cdn in root.html.heex
 - Modify the liveSocket initialization in app.js
 
+## Creating the timeline
+
+- mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
+- Copy the routes created to router.ex
+- mix ecto.migrate
+
 ## Cloning the repo
 
 - mix deps.get
@@ -35,10 +41,12 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - cd ../
 - mix phx.server
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000`](http://localhost:4000/posts) from your browser.
+Open another window and visit the same url.
+Create a Twip, bookmark or buy the recommendation.
+All actions in one window are synced instanteously between the two windows.
 
-## Creating the timeline
+## To be done
 
-- mix phx.gen.live Timeline Post posts username body likes_count:integer reposts_count:integer
-- Copy the routes created to router.ex
-- mix ecto.migrate
+- Profile, Wallet, Messages, Notifications
+- Integrating with Trading Bot

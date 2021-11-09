@@ -43,9 +43,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - Change postgres password in config/dev.exs
 - mix ecto.create
 - mix ecto.migrate
+- mix run priv/repo/seeds.exs to seed the database
 - mix phx.server
 
-Now you can visit [`localhost:4000`](http://localhost:4000/posts) from your browser.
+Wait for the build to complete (it takes a bit). Now you can visit [`localhost:4000`](http://localhost:4000/posts) from your browser.
 Open another window and visit the same url.
 Create a Twip, bookmark or buy the recommendation.
 All actions in one window are synced instanteously between the two windows.

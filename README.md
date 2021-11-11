@@ -33,6 +33,13 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - Copy the routes created to router.ex
 - mix ecto.migrate
 
+## Authorization
+
+- mix phx.gen.auth Accounts User users
+- mix deps.get
+- mix ecto.migrate
+- pipe_through([:browser, :require_authenticated_user]) in the router wherever routes require authorization
+
 ## Cloning the repo
 
 - cd twipper

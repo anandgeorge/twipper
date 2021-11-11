@@ -3,6 +3,7 @@ defmodule TwipperWeb.PostLive.PostComponent do
 
   def render(assigns) do
     ~L"""
+    <a href="/charts">
     <div id="post-<%= @post.id %>" class="w-full p-5 mx-auto mt-4 mb-4 text-gray-800 bg-white rounded-lg shadow post" style="max-width: 400px">
       <div class="flex w-full mt-2 mb-2">
         <div class="w-12 h-12 overflow-hidden rounded-full">
@@ -35,6 +36,7 @@ defmodule TwipperWeb.PostLive.PostComponent do
         </div>
       </div>
     </div>
+    </a>
     """
   end
 
